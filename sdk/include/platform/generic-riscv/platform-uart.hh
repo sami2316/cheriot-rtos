@@ -155,6 +155,9 @@ class Uart16550
 		// 2 - Clear send FIFO
 		// 5 - 64-byte FIFO (if available)
 		intrIDandFifo = 0x1;
+		// Bit five enables auto flow control in newer 16550 clones and is
+		// ignored in older ones, set it here: we want it if it's supported.
+		modemControl = modemControl & (1 << 5);
 	}
 };
 
