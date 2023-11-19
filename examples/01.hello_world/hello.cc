@@ -1,3 +1,6 @@
+// Copyright Microsoft and CHERIoT Contributors.
+// SPDX-License-Identifier: MIT
+
 #include <platform-gpio-leds.hh>
 #include <thread.h>
 #include <compartment.h>
